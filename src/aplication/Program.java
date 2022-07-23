@@ -1,6 +1,6 @@
 package aplication;
 
-import boardgame.Position;
+import boardgame.Board;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -10,8 +10,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        Board board = new Board(9, 7);
 
-        Position pos = new Position(2, 4);
-        System.out.println(pos);
     }
 }
