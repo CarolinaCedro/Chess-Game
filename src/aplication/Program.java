@@ -1,5 +1,6 @@
 package aplication;
 
+import Chess.ChessMatch;
 import boardgame.Board;
 
 import java.util.Locale;
@@ -10,7 +11,8 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Board board = new Board(9, 7);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
 
     }
 }
